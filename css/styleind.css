@@ -9,13 +9,14 @@
 /*...................inicio........................*/
 
 #inicio{/*cabezera*/
-	background-color:black;/*ojo color*/
+	background-color:#150000;/*ojo color*/
 	width: auto;
-	height:100px;	
+	height:170px;	
+	border-radius:20px 20px 20px 20px;
 }
 	
-#titulo{
-	color: #343d85;
+.titulo{	
+	color: #ffffff;
 	font-family: Segoe UI;
 	font-weight: bolder;
 	text-align: center;
@@ -102,21 +103,22 @@ div.contenedor:hover img.icon{
 
 }*/
 
-#slider{
-position: relative;
-width:600px;
-height:400px;
-padding:30px;/*agrandar borde negro igual*/
-background-color:#000;
-margin:0 auto;
-}
-
 /*posicion una tras otra*/
 #slider > div{
 	position: absolute;
 	width: 100%;
 	heigth:100%;	
 }
+
+#slider{
+position: relative;
+width:600px;
+height:400px;
+padding:30px;/*agrandar borde negro igual*/
+background-color: rgb(27,54,71);
+margin:0 auto;
+}
+
 
 
 /*...................palabras........................*/
@@ -143,6 +145,21 @@ margin:0 auto;
 	color:white;/*palabras*/
 }
 
+/*...................Registrar usuario.......................*/
 
 
-
+.sombra{
+	background-color:#ffffff;/*color de la sombra contenedor*/
+	padding:20px;
+	width:850px;
+	margin: auto;/*para centrar*/
+	display: none;
+}
+.inscribirse{
+	background-color:#FFF;
+	WIDTH: 400PX;
+	padding:10px;
+	border: solid 1px #ccc;
+	margin: auto;
+	}
+	

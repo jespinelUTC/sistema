@@ -6,6 +6,9 @@
 
 	<link rel="stylesheet" type="text/css" href="css/stylemat.css">
 	<link rel="stylesheet" type="text/css" href="css/styleind.css">
+	<link rel="stylesheet" type="text/css" href="css/fondo.css">
+
+	
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 
 	<script >
@@ -26,29 +29,98 @@
 						/*	$ . blockUI ({mensaje:  "<h1> <img src =" busy.gif "/> Un momento ... </ h1> '  })bloquear*/
 						
 					})
+					
+					/*se ejecuta para mostrar el contenido*/
+					$(document).ready(function(){
+						$('#b1').click(function(){
+							$('.sombra').fadeIn(1000);	
+						})
+
+					/*se ejecuta y desaparece el contenido*/
+					$('#b2').click(function(){
+						$('.sombra').fadeOut(1000);	
+					})
+
+					})
+					
+					
+					
 	</script>
 
 </head>
-<!-- ..................................................... ............-->
 <body>
+<!-- ..................................................... ............-->
+	<div id="inicio">	
+		<div class="titulo">
+			<h1><em>Matrix</em></h1>
+		</div>
+		<!-- iMAGEN DEL BANNER CENTRADA-->
+		
+			<div class="logo">
+							<center><img src="img/logo.png" height="100px"></center>
+			</div>
+	</div>
+<!-- ..................................................... ............-->
 
-<div  id="inicio">
-
-<h1 id="titulo">Matrix</h1>
-
-<!-- ..................................................... -->
-
-</div>
-
-	<header id="menu">  <!-- Aqui estara el menu -->  	</header>
+<header id="menu">  <!-- Aqui estara el menu -->  	</header>
 	
+<!-- ..................................................... ............-->
+
 	<div class="container" >
 			<div id ="slider">
 				<div><img src="img/foto1.jpg" height="400px" width="600px"></div>
 				<div><img src="img/foto2.jpg" height="400px" width="600px"></div>
+				<div><img src="img/uno.png" height="400px" width="600px"></div>
 				<div><img src="img/foto3.jpg" height="400px" width="600px"></div>
 			</div>
-	</div>	<br>
+	</div>
+	<br>
+	
+	<!-- boton de entrada -->
+	
+	<div id="b1" align="center">
+		  <form name="form1" action="" method="post">
+		    <input type="button" value="Inscribirse">
+		  </form>
+	  		<br>
+	</div>
+	
+	<div class="sombra">
+	
+				<div class="inscribirse">
+							<h1>Datos de Verificación:</h1>  
+							<hr>
+						<form>
+						<center>
+							  <table>
+								  <tr>
+								  <td>C.I.:</td><td><input type="text" name:="nombre" ></td>
+								  </tr>
+									  <tr>
+									  <td>E-mail:</td><td><input type="text" ></td>
+									  </tr>
+								  <!--<tr>
+								  <td>Correo:</td><td><input type="text" ></td>
+								  </tr>-->
+							  </table>
+						</center>
+						</form>
+					</div>
+					<br>
+					
+			<!-- boton de salida -->
+			
+			<div id="b2" align="center">
+				  <form name="form1" action="" method="post">
+				    <input type="button" value="Enviar">
+				  </form>
+		  			<br>
+			</div>
+	
+				
+		</div>
+		<br>
+		<br>
 	
 	<div id="cont">
 			<h1>Sistema de Matricula</h1>
